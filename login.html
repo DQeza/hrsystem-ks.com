@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formBox">
+            <h1 id="title">Sign In</h1>
+            <form id="registerForm" method="post"> 
+                <div class="inputGroup">
+                    <div class="inputField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+                    <small id="errorMessage">Error message</small>
+                    <div class="inputField">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" id="password">    
+                    </div>
+                    <small id="errorMessagePass">Error message</small>
+                    <small id="small">Error message</small>
+                </div>
+                <div class="buttons">
+                    <button id="signin" type="submit">Sign In</button>
+                </div>  
+                <div class="register">
+                    <p>Not registered? <a href="register.html">Create an account</a></p>
+                </div> 
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Projects</title>
+</head>
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <div class="div1">
+                <div class="profile">
+                <img src="./Images/icon-removebg-preview.png">
+                <i class="fa-solid fa-x" id="x"></i>
+            </div>
+            <div class="yourName">
+                <img src="./Images/pff.jpg" alt="Profile Pic">
+                <h1 id="yourName">Your Name</h1>
+            </div>
+            </div>
+            <div class="menuContent">
+                <li class="dashboard">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="dashboard"> 
+                    <i class="fa-solid fa-user-group"></i>
+                    <a href="employe.html">Employees</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa-solid fa-user-large-slash"></i>
+                    <a href="leave.html">Leave</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <a href="projects.html">Project</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa-solid fa-square-poll-horizontal"></i>
+                    <a href="payroll.html">Payroll</a>
+                </li>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="container">
+        <div class="nav-bar" id="nav-bar">
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+            <div class="dropDown">
+                <i class="fa-solid fa-user"></i>
+                <div class="dropDownContent">
+                    <li><i class="fa-solid fa-circle-user"></i>
+                        <a href="index.html">My Profile</a><br></li> 
+                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <a href="login.html">Log Out</a></li>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="h1">Payroll</h1>
+        <div class="addProject">
+            <button id="addProject"><i class="fa-solid fa-plus"></i>Add Project</button>
+        </div>
+        <div class="formContainer">
+            <form id="form" class="form">
+                <div class="section1">
+                    <label>Employe</label><br>
+                    <div id="checkbox">
+                    </div>
+                </div><br> 
+                <div class="section">
+                    <label for="month">Month</label>
+                    <input id="month" type="month">
+                    <small>Error mesage</small>
+                </div>
+                <div class="section">
+                    <label for="salary">Salary</label>
+                    <input id='salary' type="number">
+                    <small>Error mesage</small>
+                </div>
+                <div class="section">
+                    <label for="endDate">Pay Date</label>
+                    <input id="endDate" type="date">
+                    <small>Error mesage</small>
+                </div>
+                <div class="section">
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="0">Not Paid</option>
+                        <option value="1">Paid</option>
+                    </select>
+                    <small>Error mesage</small>
+                </div>
+                <div class="button">
+                    <button type="submit" id="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div id="tablee" class="table">
+        </div>
+    </div>
+
+    <script src="payroll.js"></script>
+</body>
+</html>

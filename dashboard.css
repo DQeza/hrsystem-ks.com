@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.menu {
+    width: 20%;
+    display: block;
+    background-color: rgb(55 71 79); 
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.profile {
+    text-align: center;
+    padding: 7% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile img {
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+
+.profile h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    margin-bottom: 3%;
+}
+
+.profile i {
+    color: white;
+    padding: 1% 3%;
+}
+
+.yourName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    margin: 3% 0%;
+}
+
+.yourName img {
+    width: 25%;
+    margin: 0% 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 50%;
+}
+
+.yourName h1 {
+    font-size: 25px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+}
+
+.div1 {
+    background-color: #263238;
+    padding-bottom: 3%;
+}
+
+.menuContent {
+    padding: 7% 4%;
+}
+
+.dashboard {
+    font-size: 22px;
+    padding: 7% 3.5%;
+    display: flex;
+    transition: 1s;
+    border-bottom: 1px solid #455A64;
+    color: #CFD8DC;
+}
+
+.dashboard i {
+    /* color: #777777; */
+    color: white;
+    width: 15%;
+    font-size: 20px;
+}
+
+.dashboard i:last-child {
+    width: 10%; 
+    text-align: center;
+}
+
+.dashboard a {
+    text-decoration: none;
+    /* color: #777777; */
+    color: white;
+}
+
+.dashboard:hover {
+    background-color: #263238;
+}
+
+.container {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: rgb(17, 19, 30);
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    transition: 1s;
+}
+
+.nav-bar i {
+    font-size: 25px;
+}
+
+.dropDown {
+    position:relative;
+    display:inline-block;
+}
+
+.dropDownContent {
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 160px;
+    right: -10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.dropDownContent li {
+    list-style: none;
+    padding: 3%;
+    margin: 2%;
+    transition: 1s;
+}
+
+.dropDownContent li:hover {
+    background-color: #eeeeee;
+}
+
+.dropDownContent i {
+    color: black;
+    font-size: 18px;
+}
+
+.dropDownContent a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dropDown:hover .dropDownContent {
+    display: block;
+}
+
+.content {
+    padding: 2%;
+} 
+
+.div {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects {
+    width: 23%;
+    background-color: rgb(0, 85, 255);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.projects:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.text p {
+    font-size: 35px;
+    color: white;
+}
+
+.text h2 {
+    color: white;
+}
+
+.i {
+    color: rgb(4, 66, 191);
+    font-size: 60px;
+}
+
+.users {
+    width: 23%;
+    background-color: rgb(255, 0, 43);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.users:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.usersIcon {
+    color: rgb(146, 3, 27);
+    font-size: 60px;
+}
+
+.leaveReq {
+    width: 23%;
+    background-color: red;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.leaveReq:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.leaveIcon {
+    color: rgb(155, 4, 4);
+    font-size: 60px;
+}
+
+.loan {
+    width: 23%;
+    background-color: rgb(3, 188, 3);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.loan:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.loanIcon {
+    color: green;
+    font-size: 60px;
+}
+
+.projectStatus {
+    width: 50%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    margin: 2%;
+    padding: 2%;
+}
+
+.projectStatusContent {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.projectStatusText {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.chart {
+    width: 70%;
+}
+
+.chart canvas {
+    width: 100%;
+    max-width: 800px;
+}
+
+.projectStatusText p {
+    padding: 5% 0%;
+}
+
+.projectStatusText p:first-child {
+    color: #da3a64;
+}
+
+.projectStatusText p:last-child {
+    color: #00aba9;
+}
+
+.projectStatusText p:nth-child(2){
+    color: blueviolet;
+}
